@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Regular.woff2") format("woff2"),
+    url("Roboto-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Bold.woff2") format("woff2"),
+    url("Roboto-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Medium.woff2") format("woff2"),
+    url("Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    overflow-x: hidden;
+}
+img {
+    display: block;
+    height: auto;
+    
+}
+.site-header {
+    background-color: #f2d6b5;
+    background-image: url(../images/header_vs_hero_bg.png);
+    background-blend-mode: overlay;
+}
+.container {
+    width: 1380px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.site-header-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sitenav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sitenav-item:nth-child(2) {
+    margin: 0 40px;
+}
+.sitenav-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333;
+}
+.hero {
+    background-color: #f2d6b5;
+    background-image: url(../images/header_vs_hero_bg.png);
+    background-blend-mode: overlay;
+}
+.hero-box {
+    display: flex;
+}
+.hero-info {
+    width: 464px;
+    margin-left: 100px;
+    margin-top: 116px;
+}
+.hero-info-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #000000;
+}
+.hero-info-text {
+    width: 372px;
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.img-box {
+    position: relative;
+    right: -11.6%;
+    z-index: 0;
+}
+.img-box::before {
+    position: absolute;
+    top: -62px;
+    left: -71px;
+    content: "";
+    width: 160px;
+    height: 160px;
+    background-image: url("../images/hero-stiker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.works-setion {
+    height: 636px;
+    background-image: url(../images/works_bg.png);
+    background-blend-mode: overlay;
+    background-color: #08624d;
+    margin-top: 20px;
+}
+.works-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+.cvadrad-box-father {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+}
+.line-symbol {
+    width: 890px;
+    position: absolute;
+    top: 30px;
+    left: -152px;
+    border-bottom: 3px dashed #c99b67;
+}
+.cvadrad-box {
+    width: 60px;
+    height: 60px;
+    background: #f8f8f2;
+    border: 4px solid #c99b67;
+    margin-right: 393px;
+    position: relative;
+    left: -188px;
+}
+.cvadrad-box:nth-child(4) {
+    margin-right: 0;
+}
+.work-list {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+}
+.works-item {
+    width: 433px;
+    height: 396px;
+    background: #f8f8f2;
+    padding: 20px 20px;
+    margin-right: 20px;
+}
+.works-item:nth-child(3) {
+    margin-right: 0;
+}
+.works-item-number-text {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    font-variant: small-caps;
+    color: #333;
+    opacity: 0.8;
+    text-align: end;
+    margin-bottom: 45px;
+}
+.works-item-title {
+    width: 231px;
+    height: 94px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    font-variant: small-caps;
+    color: #333;
+    margin-bottom: 10px;
+}
+.works-item-text {
+    width: 385px;
+    height: 112px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+}
